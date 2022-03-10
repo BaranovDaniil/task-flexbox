@@ -2,5 +2,31 @@ html,
 body,
 #root {
     height: 100%;
+    display: flex;
     margin: 0;
+}
+
+.flex-container {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #daa520;
+}
+
+.flex-container div:nth-child(3) {
+    display: flex;
+    align-self: end;
+}
+
+.flex-container div:nth-child(2n) {
+    display: flex;
+    align-self: center;
 }
